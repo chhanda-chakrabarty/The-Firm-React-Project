@@ -5,7 +5,7 @@ import Banner from "./components/Hero Section/Banner";
 
 const App = () => {
   return (
-    <div className="container mx-auto px-4 py-5">
+    <div>
       <Navbar />
       <Banner />
     </div>

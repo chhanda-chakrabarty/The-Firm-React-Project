@@ -1,27 +1,21 @@
 import React from "react";
 import Button from "../CommonComponents/Button";
-import Poster from "../../assets/banner.png";
+// import Poster from "../../assets/banner-bg.png";
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-center">
-      <div className="grid-cols-2">
-        {/* Heading */}
-        <h1 className="bg-red-400 text-black text-2xl font-nunito">
-          Get Bussiness Solutions with TheFirm.
-        </h1>
-        {/* Description */}
-        <p className="text-black text-2xl font-nunito">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy.
-        </p>
-        {/* Button */}
-        <Button content={"Read More"} style={"bg-black"} />
-      </div>
-      <div>
-        <picture>
-          <img src={Poster} alt={Poster} />
-        </picture>
+    <div
+      className={
+        "bg-[url(./assets/banner-bg2.png)] h-[500px] bg-cover bg-no-repeat bg-center w-full"
+      }
+    >
+      <div className="container mx-auto px-6 py-4">
+        <div className="w-1/2 bg-red-600">
+          <h1>
+            Get Business
+            <span className="block">Solutions with TheFirm.</span>
+          </h1>
+        </div>
       </div>
     </div>
   );

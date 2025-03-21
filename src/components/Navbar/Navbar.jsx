@@ -31,31 +31,35 @@ const Navbar = () => {
   ];
   return (
     <nav className="bg-white h-16">
-      {/* Navbar Element Start */}
-      <div className="flex items-center justify-between">
-        {/* logo */}
-        <img src={Logo} alt={Logo} />
-        {/* logo */}
-        {/* navbar-items */}
-        <div className="flex items-center gap-x-12.5">
-          <ul className="flex items-center justify-between gap-11 mr-12.5 text-lg font-bold font-nunito cursor-pointer">
-            {navItems?.map((item) => (
-              <li
-                key={item.id}
-                className="font-nunito text-[18px] font-bold text-black rounded customNavItem "
-              >
-                <a href="#">{item.name}</a>
-              </li>
-            ))}
-          </ul>
+      {/* Container Div Start */}
+      <div className="container mx-auto px-6 py-4">
+        {/* Navbar Element Start */}
+        <div className="flex items-center justify-between">
+          {/* logo */}
+          <img src={Logo} alt={Logo} />
+          {/* logo */}
           {/* navbar-items */}
-          {/* button */}
-          <Button content={"Get In Touch"} style={" bg-yellow "} />
+          <div className="flex items-center gap-x-12.5">
+            <ul className="flex items-center justify-between gap-11 mr-12.5 text-lg font-bold font-nunito cursor-pointer">
+              {navItems?.map((item) => (
+                <li
+                  key={item.id}
+                  className="font-nunito text-[18px] font-bold text-black rounded customNavItem "
+                >
+                  <a href="#">{item.name}</a>
+                </li>
+              ))}
+            </ul>
+            {/* navbar-items */}
+            {/* button */}
+            <Button content={"Get In Touch"} style={" bg-yellow "} />
 
-          {/* button */}
+            {/* button */}
+          </div>
         </div>
+        {/* Navbar Element */}
       </div>
-      {/* Navbar Element */}
+      {/* Container Div End */}
     </nav>
   );
 };
