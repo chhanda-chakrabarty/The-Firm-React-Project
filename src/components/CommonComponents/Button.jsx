@@ -1,10 +1,13 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({ content, style }) => {
   return (
     <div>
-      <button className="px-5 font-nunito py-2.5 rounded-2 text-white text-[18px] font-bold bg-yellow border-0 p-3 rounded cursor-pointer">
-        Get in Touch
+      <button
+        className={`px-5 font-nunito py-2.5 rounded-2 text-white text-[18px] font-bold border-0 p-3 rounded cursor-pointer ${style}`}
+      >
+        {/* {content || "Button"} */}
+        {content ? content : "Button"}
       </button>
     </div>
   );

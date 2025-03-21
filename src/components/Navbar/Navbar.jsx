@@ -42,7 +42,7 @@ const Navbar = () => {
             {navItems?.map((item) => (
               <li
                 key={item.id}
-                className="font-nunito text-[18px] font-bold text-black hover:bg-amber-100 rounded"
+                className="font-nunito text-[18px] font-bold text-black rounded customNavItem "
               >
                 <a href="#">{item.name}</a>
               </li>
@@ -50,7 +50,8 @@ const Navbar = () => {
           </ul>
           {/* navbar-items */}
           {/* button */}
-          <Button />
+          <Button content={"Get In Touch"} style={" bg-yellow "} />
+
           {/* button */}
         </div>
       </div>

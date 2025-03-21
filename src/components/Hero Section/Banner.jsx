@@ -4,8 +4,8 @@ import Poster from "../../assets/banner.png";
 
 const Banner = () => {
   return (
-    <div className="flex items-center justify-between ">
-      <div className="flex-col items-center justify-between">
+    <div className="flex items-center justify-center">
+      <div className="grid-cols-2">
         {/* Heading */}
         <h1 className="bg-red-400 text-black text-2xl font-nunito">
           Get Bussiness Solutions with TheFirm.
@@ -16,7 +16,7 @@ const Banner = () => {
           industry. Lorem Ipsum has been the industry's standard dummy.
         </p>
         {/* Button */}
-        <Button />
+        <Button content={"Read More"} style={"bg-black"} />
       </div>
       <div>
         <picture>
